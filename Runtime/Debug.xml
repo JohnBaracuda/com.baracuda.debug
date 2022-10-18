@@ -4687,11 +4687,6 @@
             When enabled, the current stack trace is captured on non native logs and passed along with <see cref="T:Baracuda.LogData`1"/>
             </summary>
         </member>
-        <member name="P:Baracuda.Debug.LogNative">
-            <summary>
-            When enabled, logs are relayed to the native Unity Logger.
-            </summary>
-        </member>
         <member name="M:Baracuda.Debug.IsBlocked(Baracuda.LogCategory,UnityEngine.LogType)">
             <summary>
             Returns true if the passed category is blocked during runtime.
@@ -4705,26 +4700,6 @@
         <member name="M:Baracuda.Debug.UnblockCategory(Baracuda.LogCategory,UnityEngine.LogType)">
             <summary>
             Unblock a <see cref="T:Baracuda.LogCategory"/>, preventing logs from being processed during runtime.
-            </summary>
-        </member>
-        <member name="M:Baracuda.Debug.AddLogReceiver(Baracuda.ILogReceiver)">
-            <summary>
-            Add a listener that will receive callbacks when a message is logged.
-            </summary>
-        </member>
-        <member name="M:Baracuda.Debug.RemoveLogReceiver(Baracuda.ILogReceiver)">
-            <summary>
-            Remove a listener that is receiving callbacks when a message is logged.
-            </summary>
-        </member>
-        <member name="M:Baracuda.Debug.AddExceptionLogReceiver(Baracuda.IExceptionLogReceiver)">
-            <summary>
-            Add a listener that will receive callbacks when an <see cref="T:System.Exception"/> is logged.
-            </summary>
-        </member>
-        <member name="M:Baracuda.Debug.RemoveExceptionLogReceiver(Baracuda.IExceptionLogReceiver)">
-            <summary>
-            Remove a listener that is receiving callbacks when an <see cref="T:System.Exception"/> is logged.
             </summary>
         </member>
         <member name="M:Baracuda.Debug.MakeCategoryMessage(Baracuda.LogCategory,System.String)">
@@ -4775,26 +4750,6 @@
         <member name="M:Baracuda.DebugExtensions.UnblockError(Baracuda.LogCategory)">
             <summary>
             Block a <see cref="T:Baracuda.LogCategory"/>
-            </summary>
-        </member>
-        <member name="T:Baracuda.IExceptionLogReceiver">
-            <summary>
-            Implement this interface to receive a callback when an exception is logged.
-            </summary>
-        </member>
-        <member name="M:Baracuda.IExceptionLogReceiver.OnExceptionReceived(Baracuda.LogData{System.Exception})">
-            <summary>
-            Called when an exception is logged.
-            </summary>
-        </member>
-        <member name="T:Baracuda.ILogReceiver">
-            <summary>
-            Implement this interface to receive a callback when a message is logged.
-            </summary>
-        </member>
-        <member name="M:Baracuda.ILogReceiver.OnLogReceived(Baracuda.LogData{System.String})">
-            <summary>
-            Called when a message is logged.
             </summary>
         </member>
         <member name="T:Baracuda.LogCategory">
@@ -4949,17 +4904,12 @@
             The stacktrace of the message.
             </summary>
         </member>
-        <member name="F:Baracuda.LogData`1.Context">
-            <summary>
-            Optional context object of the message.
-            </summary>
-        </member>
         <member name="F:Baracuda.LogData`1.LogType">
             <summary>
             Log type of the message.
             </summary>
         </member>
-        <member name="M:Baracuda.LogData`1.Deconstruct(Baracuda.LogCategory@,`0@,System.String@,UnityEngine.Object@,UnityEngine.LogType@)">
+        <member name="M:Baracuda.LogData`1.Deconstruct(Baracuda.LogCategory@,`0@,System.String@,UnityEngine.LogType@)">
             <summary>
             Deconstructs the data object.
             </summary>

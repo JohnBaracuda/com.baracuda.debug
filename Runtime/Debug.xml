@@ -981,7 +981,7 @@
             <param name="args">Format arguments.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="P:Baracuda.Debug.LogFiltering">
+        <member name="P:Baracuda.Debug.CategoryFiltering">
             <summary>
             Get or set the active log filtering method.
             </summary>
@@ -1106,6 +1106,9 @@
         <member name="F:Baracuda.LogCategory.UI">
             <summary> Log refers to UI state </summary>
         </member>
+        <member name="F:Baracuda.LogCategory.None">
+            <summary> Log refers to UI state </summary>
+        </member>
         <member name="F:Baracuda.LogCategory.Name">
             <summary>
             Representative name of the category
@@ -1178,6 +1181,21 @@
             <param name="lhs"></param>
             <returns></returns>
         </member>
+        <member name="T:Baracuda.LogCategoryFiltering">
+            <summary>
+            Log message filtering method types.
+            </summary>
+        </member>
+        <member name="F:Baracuda.LogCategoryFiltering.ExplicitBlocking">
+            <summary>
+            Every category is enabled until it is explicitly disabled.
+            </summary>
+        </member>
+        <member name="F:Baracuda.LogCategoryFiltering.BlockedByDefault">
+            <summary>
+            Every category is disabled until it is explicitly enabled.
+            </summary>
+        </member>
         <member name="T:Baracuda.LogData`1">
             <summary>
             Contains data of a Debug.Log call.
@@ -1206,21 +1224,6 @@
         <member name="M:Baracuda.LogData`1.Deconstruct(Baracuda.LogCategory@,`0@,System.String@,UnityEngine.LogType@)">
             <summary>
             Deconstructs the data object.
-            </summary>
-        </member>
-        <member name="T:Baracuda.LogFiltering">
-            <summary>
-            Log message filtering method types.
-            </summary>
-        </member>
-        <member name="F:Baracuda.LogFiltering.ExplicitBlocking">
-            <summary>
-            Every category is enabled until it is explicitly disabled.
-            </summary>
-        </member>
-        <member name="F:Baracuda.LogFiltering.BlockedByDefault">
-            <summary>
-            Every category is disabled until it is explicitly enabled.
             </summary>
         </member>
     </members>

@@ -991,6 +991,21 @@
             Default collection item separation character.
             </summary>
         </member>
+        <member name="M:Baracuda.Debug.ResetLogCategories">
+            <summary>
+            Reset enabled and disabled log categories.
+            </summary>
+        </member>
+        <member name="M:Baracuda.Debug.ResetBlockedLogCategories">
+            <summary>
+            Reset disabled log categories.
+            </summary>
+        </member>
+        <member name="M:Baracuda.Debug.ResetUnblockedLogCategories">
+            <summary>
+            Reset enabled log categories.
+            </summary>
+        </member>
         <member name="M:Baracuda.Debug.IsLogCategoryBlocked(Baracuda.LogCategory,UnityEngine.LogType)">
             <summary>
             When true, logType messages of the specified category are suppressed during runtime.

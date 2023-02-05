@@ -341,111 +341,270 @@
             <param name="logOption">Additional log options.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.Log(System.String,System.String,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
-            <param name="separator">String separating collection elements</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.Log(System.String,System.Object,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.Log``1(System.String,``0,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
-            <param name="logOption">Additional log options.</param>
-            <param name="separator">String separating collection elements</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.Log(System.String,System.String,UnityEngine.LogOption,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
             <param name="logOption">Additional log options.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.Log(System.String,System.Object,UnityEngine.LogOption,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
-            <param name="separator">String separating collection elements</param>
-            <param name="context">Object to which the message applies.</param>
-        </member>
-        <member name="M:Baracuda.Debug.LogWarning``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},UnityEngine.Object)">
-            <summary>
-              <para>Logs a message to the Unity Console.</para>
-            </summary>
-            <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
-            <param name="context">Object to which the message applies.</param>
-        </member>
-        <member name="M:Baracuda.Debug.LogWarning``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
-            <summary>
-              <para>Logs a message to the Unity Console.</para>
-            </summary>
-            <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
-            <param name="logOption">Additional log options.</param>
-            <param name="separator">String separating collection elements</param>
-            <param name="context">Object to which the message applies.</param>
-        </member>
-        <member name="M:Baracuda.Debug.LogWarning``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,UnityEngine.Object)">
-            <summary>
-              <para>Logs a message to the Unity Console.</para>
-            </summary>
-            <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
             <param name="logOption">Additional log options.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.Log``1(System.String,``0,UnityEngine.LogOption,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
-            <param name="separator">String separating collection elements</param>
-            <param name="context">Object to which the message applies.</param>
-        </member>
-        <member name="M:Baracuda.Debug.LogError``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},UnityEngine.Object)">
-            <summary>
-              <para>Logs a message to the Unity Console.</para>
-            </summary>
-            <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
-            <param name="context">Object to which the message applies.</param>
-        </member>
-        <member name="M:Baracuda.Debug.LogError``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
-            <summary>
-              <para>Logs a message to the Unity Console.</para>
-            </summary>
-            <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
             <param name="logOption">Additional log options.</param>
-            <param name="separator">String separating collection elements</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(Baracuda.LogCategory,System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.Log``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="category">Custom log category.</param>
-            <param name="collection">Collection to be converted to string representation for display.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.Log``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.Log``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.Log``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError``1(Baracuda.LogCategory,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.Log``1(System.String,System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.Log``1(System.String,System.Collections.Generic.IEnumerable{``0},UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.Log``1(System.String,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.Log``1(System.String,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning``1(System.String,System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning``1(System.String,System.Collections.Generic.IEnumerable{``0},UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning``1(System.String,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning``1(System.String,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError``1(System.String,System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError``1(System.String,System.Collections.Generic.IEnumerable{``0},UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError``1(System.String,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="separator">String separating enumerable elements</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError``1(System.String,System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="enumerable">Enumerable to be converted to string representation for display.</param>
             <param name="logOption">Additional log options.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
@@ -500,6 +659,57 @@
             <param name="logOption">Additional log options.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
+        <member name="M:Baracuda.Debug.LogWarning(System.String,System.String,UnityEngine.Object)">
+            <summary>
+              <para>A variant of Debug.Log that logs a warning message to the console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="warning">String to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning(System.String,System.Object,UnityEngine.Object)">
+            <summary>
+              <para>A variant of Debug.Log that logs a warning message to the console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="warning">String to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning``1(System.String,``0,UnityEngine.Object)">
+            <summary>
+              <para>A variant of Debug.Log that logs a warning message to the console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="warning">String to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning(System.String,System.String,UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning(System.String,System.Object,UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogWarning``1(System.String,``0,UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
         <member name="M:Baracuda.Debug.LogError(Baracuda.LogCategory,System.String,UnityEngine.Object)">
             <summary>
               <para>A variant of Debug.Log that logs an error message to the console.</para>
@@ -543,6 +753,57 @@
             <param name="context">Object to which the message applies.</param>
         </member>
         <member name="M:Baracuda.Debug.LogError``1(Baracuda.LogCategory,``0,UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError(System.String,System.String,UnityEngine.Object)">
+            <summary>
+              <para>A variant of Debug.Log that logs an error message to the console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="error">String or object to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError(System.String,System.Object,UnityEngine.Object)">
+            <summary>
+              <para>A variant of Debug.Log that logs an error message to the console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="error">String or object to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError``1(System.String,``0,UnityEngine.Object)">
+            <summary>
+              <para>A variant of Debug.Log that logs an error message to the console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="error">String or object to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError(System.String,System.String,UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError(System.String,System.Object,UnityEngine.LogOption,UnityEngine.Object)">
+            <summary>
+              <para>Logs a message to the Unity Console.</para>
+            </summary>
+            <param name="category">Custom log category.</param>
+            <param name="message">String or object to be converted to string representation for display.</param>
+            <param name="logOption">Additional log options.</param>
+            <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.LogError``1(System.String,``0,UnityEngine.LogOption,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -827,7 +1088,7 @@
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.ICollection{``0},System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -835,14 +1096,14 @@
             <param name="separator">String separating collection elements</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.ICollection{``0},UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="collection">Collection to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -851,7 +1112,7 @@
             <param name="separator">String separating collection elements</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -1070,59 +1331,8 @@
         <member name="F:Baracuda.LogCategory.Log">
             <summary> Unassigned value </summary>
         </member>
-        <member name="F:Baracuda.LogCategory.Account">
-            <summary> Log refers to platform dependent user account </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.AI">
-            <summary> Log refers to AI state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Asset">
-            <summary> Log refers to asset state </summary>
-        </member>
         <member name="F:Baracuda.LogCategory.Editor">
             <summary> Log refers to editor state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.GameState">
-            <summary> Log refers to game state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.IO">
-            <summary> Log refers to IO operations </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Input">
-            <summary> Log refers to user input </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Network">
-            <summary> Log refers to network state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Platform">
-            <summary> Log refers to platform state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Player">
-            <summary> Log refers to player state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Scene">
-            <summary> Log refers to scene state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Service">
-            <summary> Log refers to service state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Settings">
-            <summary> Log refers to settings </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Temp">
-            <summary> Category for temporary logs </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Thread">
-            <summary> Log refers to thread state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.Unity">
-            <summary> Log refers to Unity state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.UI">
-            <summary> Log refers to UI state </summary>
-        </member>
-        <member name="F:Baracuda.LogCategory.None">
-            <summary> Log refers to UI state </summary>
         </member>
         <member name="F:Baracuda.LogCategory.Name">
             <summary>
@@ -1133,6 +1343,12 @@
             <summary>
             Factory method for a LogCategory.
             </summary>
+        </member>
+        <member name="M:Baracuda.LogCategory.#ctor(System.String)">
+            <summary>
+            Create a new instance.
+            </summary>
+            <param name="name">Category name</param>
         </member>
         <member name="M:Baracuda.LogCategory.ToString">
             <summary>

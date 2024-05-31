@@ -1,3 +1,4 @@
 # Conditional Debug 
 
-Debug wrapper dll for more functionality and conditional logging.
+Custom debugging DLL designed to extend the UnityEngine.Debug class by adding enhanced functionality. This augmented feature set includes conditional logging, togg…
+

@@ -82,11 +82,6 @@
             <param name="args">Format arguments.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.BurstLog(System.String)">
-            <summary>
-            Burst compatible log method.
-            </summary>
-        </member>
         <member name="M:Baracuda.Debug.LineNumber(System.Int32)">
             <summary>
             Returns the callers line number as an integer, captured at compile time.
@@ -334,6 +329,16 @@
             Static ctor
             </summary>
         </member>
+        <member name="F:Baracuda.Debug.DEBUG">
+            <summary>
+            String representing the debug compiler symbol that when defined, will enable debug logs.
+            </summary>
+        </member>
+        <member name="F:Baracuda.Debug.FORCE_DEBUG_LOGS">
+            <summary>
+            String representing a compiler symbol that when defined, will enable debug logs even in non debug builds.
+            </summary>
+        </member>
         <member name="M:Baracuda.Debug.DrawLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)">
             <summary>
               <para>Draws a line between specified start and end points.</para>
@@ -402,51 +407,57 @@
             <param name="duration">How long the line will be visible for (in seconds).</param>
             <param name="depthTest">Should the line be obscured by other objects closer to the camera?</param>
         </member>
-        <member name="M:Baracuda.Debug.Log(System.String,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log(System.String,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="message">String or object to be converted to string representation for display.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log(System.Object,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log(System.Object,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="message">String or object to be converted to string representation for display.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log(System.String,UnityEngine.Object,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log(System.String,UnityEngine.Object,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="message">String or object to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log(System.Object,UnityEngine.Object,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log(System.Object,UnityEngine.Object,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="message">String or object to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(``0,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.Log``1(``0,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="message">String or object to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(``0,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log``1(``0,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="message">String or object to be converted to string representation for display.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log(System.String,UnityEngine.LogOption,UnityEngine.Object,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log(System.String,UnityEngine.LogOption,UnityEngine.Object,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -454,8 +465,9 @@
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log(System.Object,UnityEngine.LogOption,UnityEngine.Object,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log(System.Object,UnityEngine.LogOption,UnityEngine.Object,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -463,8 +475,9 @@
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(``0,UnityEngine.LogOption,UnityEngine.Object,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log``1(``0,UnityEngine.LogOption,UnityEngine.Object,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -472,8 +485,9 @@
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(System.Collections.Generic.ICollection{``0},System.String,UnityEngine.Object,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log``1(System.Collections.Generic.ICollection{``0},System.String,UnityEngine.Object,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -481,16 +495,18 @@
             <param name="separator">String separating collection elements</param>
             <param name="context">Object to which the message applies.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(System.Collections.Generic.ICollection{``0},UnityEngine.Object,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log``1(System.Collections.Generic.ICollection{``0},UnityEngine.Object,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="collection">Collection to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,System.String,UnityEngine.Object,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log``1(System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,System.String,UnityEngine.Object,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -499,8 +515,9 @@
             <param name="separator">String separating collection elements</param>
             <param name="context">Object to which the message applies.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.Log``1(System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,UnityEngine.Object,Baracuda.Verbosity)">
+        <member name="M:Baracuda.Debug.Log``1(System.Collections.Generic.ICollection{``0},UnityEngine.LogOption,UnityEngine.Object,Baracuda.Verbosity,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -508,6 +525,7 @@
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
             <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
         <member name="M:Baracuda.Debug.LogFormat(System.String,Baracuda.Verbosity,System.Object[])">
             <summary>
@@ -1239,67 +1257,75 @@
             <param name="logOption">Additional log options.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError(System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError(System.String,UnityEngine.Object,System.String)">
             <summary>
               <para>A variant of Debug.Log that logs a warning message to the console.</para>
             </summary>
             <param name="error">String to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError(System.Object,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError(System.Object,UnityEngine.Object,System.String)">
             <summary>
               <para>A variant of Debug.Log that logs a warning message to the console.</para>
             </summary>
             <param name="error">Object to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(``0,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError``1(``0,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="error">Object to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError(System.String,UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError(System.String,UnityEngine.LogOption,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="error">String or object to be converted to string representation for display.</param>
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError(System.Object,UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError(System.Object,UnityEngine.LogOption,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="error">String or object to be converted to string representation for display.</param>
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(``0,UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError``1(``0,UnityEngine.LogOption,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="error">String or object to be converted to string representation for display.</param>
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="collection">Collection to be converted to string representation for display.</param>
             <param name="separator">String separating collection elements</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="collection">Collection to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -1307,14 +1333,16 @@
             <param name="logOption">Additional log options.</param>
             <param name="separator">String separating collection elements</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogError``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="collection">Collection to be converted to string representation for display.</param>
             <param name="logOption">Additional log options.</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
         <member name="M:Baracuda.Debug.LogErrorFormat(System.String,System.Object[])">
             <summary>
@@ -1346,67 +1374,74 @@
             <param name="category"></param>
             <param name="exception">Runtime Exception.</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning(System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogWarning(System.String,UnityEngine.Object,System.String)">
             <summary>
               <para>A variant of Debug.Log that logs a warning message to the console.</para>
             </summary>
             <param name="warning">String to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning(System.Object,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogWarning(System.Object,UnityEngine.Object,System.String)">
             <summary>
               <para>A variant of Debug.Log that logs a warning message to the console.</para>
             </summary>
             <param name="warning">String to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning``1(``0,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogWarning``1(``0,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="warning">Object to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning(System.String,UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogWarning(System.String,UnityEngine.LogOption,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="message">String or object to be converted to string representation for display.</param>
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning(System.Object,UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogWarning(System.Object,UnityEngine.LogOption,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="message">String or object to be converted to string representation for display.</param>
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning``1(``0,UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogWarning``1(``0,UnityEngine.LogOption,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="message">String or object to be converted to string representation for display.</param>
             <param name="logOption"></param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning``1(System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogWarning``1(System.Collections.Generic.IEnumerable{``0},System.String,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="enumerable">Enumerable to be converted to string representation for display.</param>
             <param name="separator">String separating enumerable elements</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogWarning``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="enumerable">Enumerable to be converted to string representation for display.</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogWarning``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,System.String,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
@@ -1414,14 +1449,16 @@
             <param name="logOption">Additional log options.</param>
             <param name="separator">String separating enumerable elements</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
-        <member name="M:Baracuda.Debug.LogWarning``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object)">
+        <member name="M:Baracuda.Debug.LogWarning``1(System.Collections.Generic.IEnumerable{``0},UnityEngine.LogOption,UnityEngine.Object,System.String)">
             <summary>
               <para>Logs a message to the Unity Console.</para>
             </summary>
             <param name="enumerable">Enumerable to be converted to string representation for display.</param>
             <param name="logOption">Additional log options.</param>
             <param name="context">Object to which the message applies.</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
         <member name="M:Baracuda.Debug.LogWarningFormat(System.String,System.Object[])">
             <summary>
@@ -1437,6 +1474,20 @@
             <param name="format">A composite format string.</param>
             <param name="args">Format arguments.</param>
             <param name="context">Object to which the message applies.</param>
+        </member>
+        <member name="M:Baracuda.Debug.BurstLog(System.String)">
+            <summary>
+            Burst compatible log method.
+            </summary>
+        </member>
+        <member name="M:Baracuda.Debug.LogRelease(System.String,UnityEngine.Object,Baracuda.Verbosity,System.String)">
+            <summary>
+              <para>Logs a message to the Unity Console. This method will log in both debug and release builds</para>
+            </summary>
+            <param name="message">String or object to be converted to string representation for display.</param>
+            <param name="context">Object to which the message applies.</param>
+            <param name="verbosity">The logging verbosity level</param>
+            <param name="filePath">Auto argument to determine the log category of the message</param>
         </member>
         <member name="P:Baracuda.Debug.CategoryFiltering">
             <summary>
@@ -1523,6 +1574,11 @@
             <param name="content"></param>
             <param name="color"></param>
             <returns></returns>
+        </member>
+        <member name="M:Baracuda.Debug.GetCategoryFromFilePath(System.String)">
+            <summary>
+            Returns the category name given a specific file path.
+            </summary>
         </member>
         <member name="T:Baracuda.DebugExtensions">
             <summary>
